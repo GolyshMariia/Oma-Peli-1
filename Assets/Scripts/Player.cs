@@ -34,11 +34,28 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (this.CompareTag("Player") && other.CompareTag("Finish"))
-        { 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+
+
+        if (this.CompareTag("Obstacle") && other.CompareTag("Obstacle"))
+
+            foreach(ButtonAct button in FindObjectsOfType<ButtonAct>())
+            {
+                button.canPush = false;
+            }
+
+
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (this.CompareTag("Obstacle") && other.CompareTag("Obstacle"))
 
-
+            foreach (ButtonAct button in FindObjectsOfType<ButtonAct>())
+            {
+                button.canPush = true;
+            }
+    }
 }

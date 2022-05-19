@@ -15,7 +15,7 @@ public class ButtonAct : MonoBehaviour
     { 
         if (canPush)
     {
-        if(other.CompareTag("Cube") || other.CompareTag("Player"))
+        if(other.CompareTag("Obstacle") || other.CompareTag("Player"))
         {
             foreach(GameObject first in firstGroup)
             {
@@ -24,12 +24,12 @@ public class ButtonAct : MonoBehaviour
             }
             foreach (GameObject second in secondGroup)
             {
-                second.GetComponent<Renderer>().material = normal;
+                second.GetComponent<Renderer>().material = transparent;
                 second.GetComponent<Collider>().isTrigger = true;
             }
             GetComponent<Renderer>().material = transparent;
             button.GetComponent<Renderer>().material = normal;
-ButtonAct.canPush = true;
+            button.canPush = true;
 
         }
 

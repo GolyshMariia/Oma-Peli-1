@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OmaPeli 3.unity
     guid: e999dac2311304fd7a2d9b1396bfa5a4
+  - enabled: 1
+    path: Assets/Scenes/OmaPeli 4.unity
+    guid: 4929783bddaa545ebb2a1bbd1d7203cb
+  - enabled: 1
+    path: Assets/Scenes/OmaPeli 5.unity
+    guid: 98076cb2d9b0445e2bdaad924be1adcd
   m_configObjects: {}
