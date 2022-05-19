@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: d36546a8362e24c7c901a43dad7db710
+  - enabled: 1
     path: Assets/Scenes/OmaPeli 1.unity
     guid: 94b36906d093b415f88996c12b4ee64e
   - enabled: 1
