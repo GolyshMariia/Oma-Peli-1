@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/OmaPeli 1.unity
+    guid: 94b36906d093b415f88996c12b4ee64e
+  - enabled: 1
+    path: Assets/Scenes/OmaPeli 2.unity
+    guid: a1997e7140b2747a0883e561373d614f
+  - enabled: 1
+    path: Assets/Scenes/OmaPeli 3.unity
+    guid: e999dac2311304fd7a2d9b1396bfa5a4
   m_configObjects: {}
